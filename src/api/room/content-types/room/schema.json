@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rooms",
+  "info": {
+    "singularName": "room",
+    "pluralName": "rooms",
+    "displayName": "Room",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "mapGLB": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
