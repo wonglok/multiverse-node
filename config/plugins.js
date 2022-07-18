@@ -5,7 +5,10 @@ module.exports = ({ env }) => {
       enabled: true,
       config: {
         IOServerOptions: {
-          cors: { origin: "*", methods: ["GET"] },
+          cors: {
+            origin: "*",
+            methods: ["GET", "POST", "PUT", "DELETE", "OPTION"],
+          },
         },
         contentTypes: {
           message: "*",
